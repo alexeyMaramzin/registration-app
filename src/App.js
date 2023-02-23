@@ -1,10 +1,12 @@
+import iphone from '../src/images/IPhone.png'
 
+import { Container, UiTime}
+    from './components';
 function App() {
   return (
-    <>
-      Hello
-    </>
+    <body>
+        <Container/>
+    </body>
   );
 }
-
 export default App;
