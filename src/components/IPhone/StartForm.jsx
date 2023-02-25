@@ -4,12 +4,13 @@ import {UiTime, UiIcons} from "..";
 import {UiButton} from "..";
 import IPhone from "../../images/IPhone.png";
 import Logo from "../../images/Logo.jpg";
+import {NavLink} from 'react-router-dom';
 export const StartForm = () => {
     return (
         <div className={styles.start_form}>
             <div className={styles.start_form__flex}>
                 <div className={styles.time}>
-                    <UiTime/>
+                    <UiTime color='white'/>
                 </div>
                 <div className={styles.icons}>
                     <UiIcons/>
@@ -31,18 +32,21 @@ export const StartForm = () => {
                 alt="Downloading..."
                 className={styles.logo}
                 src={Logo}/>
+            <NavLink to='/signup'>
+                <div onClick={()=>console.log("sign")} className={styles.iphone_signup}>
+                    <UiButton
+                        padding='20px 132px'
+                        name='Sign up'
+                        color='#D5E7D4'/>
+                </div>
+            </NavLink>
             <div onClick={()=>console.log("log")} className={styles.iphone_login}>
                 <UiButton
                     padding='20px 140px'
                     name='Log in'
                     color='#FFCA42'/>
             </div>
-            <div onClick={()=>console.log("sign")} className={styles.iphone_signup}>
-                <UiButton
-                    padding='20px 132px'
-                    name='Sign up'
-                    color='#D5E7D4'/>
-            </div>
+
         </div>
     );
 };

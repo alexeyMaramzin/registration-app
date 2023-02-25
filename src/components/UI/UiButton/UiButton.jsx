@@ -1,4 +1,4 @@
-import styles from './Button.module.scss';
+import styles from './UiButton.module.scss';
 export const UiButton = (props) => {
     return (
         <button
