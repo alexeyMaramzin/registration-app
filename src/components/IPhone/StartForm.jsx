@@ -32,21 +32,23 @@ export const StartForm = () => {
                 alt="Downloading..."
                 className={styles.logo}
                 src={Logo}/>
-            <NavLink to='/signup'>
-                <div onClick={()=>console.log("sign")} className={styles.iphone_signup}>
-                    <UiButton
-                        padding='20px 132px'
-                        name='Sign up'
-                        color='#D5E7D4'/>
-                </div>
-            </NavLink>
-            <div onClick={()=>console.log("log")} className={styles.iphone_login}>
+            <NavLink to='login'>
                 <UiButton
-                    padding='20px 140px'
+                    onClick={()=>console.log("log")}
+                    className={styles.iphone_login}
+                    padding='16px 146px'
                     name='Log in'
                     color='#FFCA42'/>
-            </div>
+            </NavLink>
 
+            <NavLink to='/signup'>
+                <UiButton
+                    onClick={()=>console.log("sign")}
+                    className={styles.iphone_signup}
+                    padding='16px 140px'
+                    name='Sign up'
+                    color='#D5E7D4'/>
+            </NavLink>
         </div>
     );
 };
