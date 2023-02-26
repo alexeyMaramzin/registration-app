@@ -25,3 +25,8 @@ button{
     background-position: 0 50%;
   }
 }
+@media screen and (min-height: 1300px){
+  body{
+    transform: scale(1.5);
+  }
+}

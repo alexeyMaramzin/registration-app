@@ -75,7 +75,7 @@
   }
 }
 //Sign Up
-.signup_form, .login_form{
+.signup_form, .login_form, .authorization_success{
   background-color: #fff;
   position: absolute;
   z-index: 0;
@@ -174,5 +174,15 @@
     font-size: 13px;
     color: #1F5460;
     margin: 310px 0 0 110px;
+  }
+}
+//Authorization success
+.authorization_success{
+  &__button{
+    margin-top: 100px;
+  }
+  &__email{
+    margin: 20px 0 0 34px;
+    opacity: 80%;
   }
 }
